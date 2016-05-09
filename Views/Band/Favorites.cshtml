@@ -1,0 +1,12 @@
+﻿@using BandCentral.Models;
+@model FavoritesViewModel
+@{
+    ViewBag.Title = "Favorites";
+}
+
+<ul>
+@foreach (Band b in Model.Favorites)
+{
+    <li>@b.BandName</li>
+}
+</ul>

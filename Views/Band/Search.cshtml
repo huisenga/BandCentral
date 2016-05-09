@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+@using (Html.BeginForm("addBand", "Band", FormMethod.Post))
+{ 
+    @Html.TextBox("bandName")
+    <input type="submit" value="Create Band" />
+}
+
